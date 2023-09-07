@@ -54,3 +54,30 @@ export default function App({ Component, pageProps }) {
     return <div></div>;
 }
 ```
+
+🌟|Layout.js| layout component
+
+-   in most cases, we use layout.js and let it wrap over the app so anything inside has a certain layout without having your custom app component heavy.
+
+```
+export default function Layout({children}) {
+    return (
+        <>
+        <Navbar/>
+        <div>{children}</div>
+        </>
+    )
+}
+```
+
+🌟|Head.js| 
+
+-   Next.js comes with some tiny packages that allow us to implement common features. In React.js we would have to download something like React-helmet to manage the Head of our application, however, Next.js has everything inside its umbrella so we can use for free.
+
+🌟|redirection & rewrites| in next.config file
+
+-   by using rewrites in config file, we can hide some private/crucial data inside the application.
+
+🌟|getServerSideProps()|
+
+-   the code inside this function only happens in the backend(Server) It allows us to have server side rendering ONLY.

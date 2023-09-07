@@ -1,9 +1,10 @@
 import Navbar from '@/components/Navbar';
+import Seo from '@/components/Seo';
 
 export default function About() {
     return (
         <div>
-            <h1>About</h1>
+            <Seo title="About" />
         </div>
     );
 }
