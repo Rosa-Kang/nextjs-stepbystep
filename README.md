@@ -80,4 +80,12 @@ export default function Layout({children}) {
 
 🌟|getServerSideProps()|
 
--   the code inside this function only happens in the backend(Server) It allows us to have server side rendering ONLY.
+-   getServerSideProps() function returns an object with the 'props' property and the props normally to be sent to the page component as prop. The code inside this function only happens in the backend(Server) It allows us to have server side rendering ONLY.
+
+🌟|Dynamic url| /movies/:id
+
+-   then you will need to create a folder named: movies and then create a file named with square bracket [nameoftheProperty].js
+
+-   when you do [id].js for example, it receives only one Variable however, if you do something like below, you can put whatever queries in you url.
+
+-   [...id].js : catch all url
