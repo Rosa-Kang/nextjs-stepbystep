@@ -23,3 +23,34 @@
 🌟|modules.css|
 
 -   Next.js allows us to use module file and developers can use it simply.
+
+🌟|styled.jsx|
+
+-   Another way we can do the styling is to have style tag and give it a 'jsx' prop to it so we can add the styling inside the individual component.
+```
+ex>
+ <style jsx>{`
+    nav{
+        background: lightblue;
+    }
+ `}</style>
+
+ when you want to give a global style, then you can do this.
+
+ <style jsx global>{`
+ a{
+        text-decoration:none;
+     }  
+`}</style>
+```
+
+🌟|_app.js| Custom App Component
+
+-  style tag and global prop can apply global style but only the page-wide. If wanting to apply global style application wide, then we can create 'app component': _app.js
+
+-  and your App component should look like this:
+```
+export default function App({ Component, pageProps }) {
+    return <div></div>;
+}
+```
